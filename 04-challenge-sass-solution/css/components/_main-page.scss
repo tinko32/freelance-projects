@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+.main-page {
+  display: block;
+  .inner-80 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    .image-main {
+      position: relative;
+      flex-basis: 33.3333%;
+      @include mix.laptop-m-styles {
+        flex-basis: 50%;
+      }
+      .image-img {
+        display: block;
+        width: 100%;
+        @include mix.four-k-styles {
+          width: 100%;
+        }
+      }
+      @include mix.tablet-styles {
+        flex-basis: 50%;
+      }
+      @include mix.mobile-l-styles {
+        flex-basis: 100%;
+      }
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var.$background-color-base;
+        color: var.$text-color-secondary;
+        font-family: var.$font-family-base;
+        font-weight: var.$font-weight-normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          opacity: 1;
+        }
+        a {
+          text-decoration: none;
+          color: var.$text-color-secondary;
+        }
+        .image-description {
+          border-top: 2px solid var.$text-color-secondary;
+          border-bottom: 2px solid var.$text-color-secondary;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

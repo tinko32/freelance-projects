@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul, a {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.fixed-bar {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  .fixed-bar {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.fixed-bar .inner-20 .logo, .fixed-bar .copy-text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .fixed-bar .inner-20 .logo, .fixed-bar .copy-text {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  padding-left: 20%;
+}
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+}
+
+.fixed-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  display: block;
+}
+@media (max-width: 768px) {
+  .fixed-bar {
+    position: static;
+    width: 100%;
+  }
+}
+.fixed-bar .inner-20 {
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .fixed-bar .inner-20 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.fixed-bar .inner-20 .hamburger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .fixed-bar .inner-20 .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #898989;
+    padding: 5px 5px;
+    font-size: 23px;
+    color: #898989;
+  }
+}
+.fixed-bar .inner-20 .logo {
+  margin-bottom: 5px;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .fixed-bar .inner-20 .logo img {
+    width: 100px;
+  }
+}
+.fixed-bar .inner-20 ul li {
+  padding: 10px 0px;
+  list-style-type: none;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .fixed-bar .inner-20 ul li {
+    display: none;
+  }
+  .fixed-bar .inner-20 ul li .hamburger-menu {
+    display: inline-block;
+  }
+}
+.fixed-bar .inner-20 ul li a {
+  text-decoration: none;
+  color: #898989;
+}
+.fixed-bar .inner-20 ul li a:hover {
+  text-decoration: underline;
+}
+.fixed-bar .copy-text {
+  color: #898989;
+  line-height: 1.5;
+  padding-top: 18.75rem;
+}
+@media (max-width: 768px) {
+  .fixed-bar .copy-text {
+    display: none;
+  }
+}
+.fixed-bar .copy-text span {
+  color: #000;
+}
+.fixed-bar .copy-text span a {
+  text-decoration: none;
+  color: #000;
+}
+.fixed-bar .copy-text span:hover {
+  text-decoration: underline;
+}
+
+.main-page {
+  display: block;
+}
+.main-page .inner-80 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.main-page .inner-80 .image-main {
+  position: relative;
+  flex-basis: 33.3333%;
+}
+@media (max-width: 1024px) {
+  .main-page .inner-80 .image-main {
+    flex-basis: 50%;
+  }
+}
+.main-page .inner-80 .image-main .image-img {
+  display: block;
+  width: 100%;
+}
+@media (max-width: 2560px) {
+  .main-page .inner-80 .image-main .image-img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main-page .inner-80 .image-main {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .main-page .inner-80 .image-main {
+    flex-basis: 100%;
+  }
+}
+.main-page .inner-80 .image-main .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  color: #898989;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.main-page .inner-80 .image-main .image-overlay:hover {
+  opacity: 1;
+}
+.main-page .inner-80 .image-main .image-overlay a {
+  text-decoration: none;
+  color: #898989;
+}
+.main-page .inner-80 .image-main .image-overlay .image-description {
+  border-top: 2px solid #898989;
+  border-bottom: 2px solid #898989;
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,89 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:math';
+
+.fixed-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+   display: block;
+    @extend %section;
+    @include mix.tablet-styles {
+        position: static;
+        width: 100%;
+    }
+    .inner-20 {
+        padding: 5px;
+        @include mix.tablet-styles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hamburger-menu {
+            display: none;
+            @include mix.tablet-styles {
+                display: flex;
+                justify-content: space-between;
+                border: 2px solid var.$text-color-secondary;
+                padding: 5px 5px;
+                font-size: 23px; 
+                color: var.$text-color-secondary;              
+            }
+        }        
+        .logo {
+            @extend %wrap;
+            margin-bottom: 5px;
+            padding: 20px 0px;
+            cursor: pointer;
+            img {
+                @include mix.tablet-styles {
+                    width: 100px;
+                }        
+            }  
+        }
+        ul li {
+            padding: 10px 0px;
+            list-style-type: none;
+            line-height: var.$line-height-base;
+            @include mix.tablet-styles {
+                display: none;
+                .hamburger-menu {
+                    display: inline-block;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: var.$text-color-secondary;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+       
+    }
+    .copy-text {
+            color: var.$text-color-secondary;
+            line-height: var.$line-height-base;
+            padding-top: (var.$gutter-base * 10);
+            @extend %wrap;
+            @include mix.tablet-styles {
+                display: none;
+            }
+                
+        span {
+            color: var.$text-color-base;
+            a {
+                text-decoration: none;
+                color: var.$text-color-base;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+   
