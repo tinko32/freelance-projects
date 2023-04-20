@@ -1,0 +1,78 @@
+.carousel-caption {
+  top: 40%;
+  transform: translateY(-40%);
+  bottom: auto;
+}
+.navbar .active {
+  border-left: 1px solid white;
+}
+.navbar-brand {
+  padding-left: 20px !important;
+}
+.height {
+  height: 5px !important;
+  background: transparent !important;
+  border: 1px solid white !important;
+  
+}
+.tag {
+  bottom: 10px;
+  left: 10px;
+}
+.h-70 {
+  height: 75vh;
+  width: 100% !important;
+  background-size: cover;
+}
+.photo-g {
+  cursor: pointer;
+}
+.bg-about {
+  background: url("./Images/image1.jpg") no-repeat center center fixed;
+  width: 100%;
+  background-size: cover;
+  height: 60vh;
+}
+
+.about-us-img {
+  margin-top: -70px;  
+}
+.about-us-img img {
+  height: 400px;
+}
+
+@media (max-width:768px) {
+  .about-us-img {
+    margin-top: -120px;
+  }
+  .about-us-img img {
+    width: 350px;
+  }
+}
+
+
+.section-th {
+  background: url("./Images/lights.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+.video-popup {
+  background: url("./Images/media.jpg") no-repeat center center fixed;
+  height: 15vh;
+}
+
+.bg-colr {
+  background-color: rgba(0, 0, 0, 0.856);
+  height: 15vh;
+}
+.fa-play {
+  cursor: pointer;
+}
+
+.border-secondary {
+  border: 1px solid lightgrey !important;
+}
+
+.copy {
+  background-color: black !important;
+}
