@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brainster-Labs Project-01</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- The form was made with bootstrap -->
+    <!-- NavBar -->
+    <div class="bx-sha">
+      <nav class="col-90">
+        <div class="logo">
+          <a href="./index.html" id=""
+            ><img src="../style/images/Logo.png" alt=""
+          /></a>
+          <p class="logo-text">Brainster</p>
+        </div>
+        <div class="openMenu">
+          <div class="hamburger">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+        </div>
+        <ul class="mainMenu">
+          <li><a href="./academy-marketing.html">Академија за маркетинг</a></li>
+          <li>
+            <a href="./academy-programing.html"> Академија за програмирање</a>
+          </li>
+          <li>
+            <a href="./academy-datascience.html">Академија за data science</a>
+          </li>
+          <li><a href="./academy-design.html">Академија за дизајн</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <li class="nav-item">
+            <a href="./sign-up.html" class="btn-red">Вработи наш студент</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  <!-- Form section -->
+    <div class="signUp col-90">
+      <div class="form-text">
+        <h1>Вработи студенти</h1>
+      </div>
+        <!-- Form Starts from here -->
+      <form method="post">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNameSurname">Име и презиме</label>
+            <input
+              type="name"
+              placeholder="Вашето име и презиме"
+              required
+              class="form-control"
+              id="inputNameSurname"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputText">Име на компанија</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Име на вашата компанија"
+              id="inputText"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail43">Контакт имејл</label>
+            <input
+              type="email"
+              placeholder="Контакт имејл на вашата компанија"
+              required
+              class="form-control"
+              id="inputEmail43"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputNumber">Контакт телефон</label>
+            <input
+              type="number"
+              placeholder="Контакт телефон на вашата компанија"
+              class="form-control"
+              id="inputNumber"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputState">Тип на студенти</label>
+            <select id="inputState" class="form-control font-weight-bold">
+              <option selected>Изберете тип на студент</option>
+              <option>Академија за Маркетинг</option>
+              <option>Академија за програмирање</option>
+              <option>Академија за data science</option>
+              <option>Академија за дизајн</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 btn-form">
+            <button type="submit" class="btn btn-danger col-12">Испрати</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Copy Right Section -->
+    <div class="copy-right copy-abs">
+      <div class="text">
+        <p>
+          Изработено со
+          <i class="fas fa-heart" style="color: #ff0000"></i> од студентите на
+          Brainster
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>
