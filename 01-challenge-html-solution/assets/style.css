@@ -1,0 +1,229 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  background: #258dc8;
+  margin: 0;
+  width: 100%;
+}
+
+.section-one {
+  min-height: 40vh;
+}
+
+.section-one header {
+  text-align: right;
+  margin-right: 100px;
+  padding-top: 10px;
+}
+
+nav a:hover {
+  color: red;
+  text-decoration: underline red;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+nav img {
+  max-width: 35px;
+  margin-right: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.apple-devices img {
+  max-width: 600px;
+  margin-left: 700px;
+  margin-top: 52px;
+}
+
+.section-two {
+  max-width: 100%;
+  display: flexbox;
+  text-align: center;
+}
+.apple-icons {
+  display: flex;
+}
+
+.apple-icons h3 {
+  font-size: 20px;
+}
+
+.fa-laptop,
+.fa-tablet-screen-button,
+.fa-solid,
+.fa-comments {
+  font-size: 80px;
+  padding-top: 20px;
+}
+
+.fa-laptop {
+  width: 25%;
+  background-color: #7abcff;
+}
+
+.fa-tablet-screen-button {
+  width: 25%;
+  background-color: #f3e2c7;
+}
+
+.fa-mobile-screen-button {
+  width: 25%;
+  background-color: aqua;
+}
+
+.fa-comments {
+  width: 25%;
+  background-color: #8989ba;
+}
+
+.section-three {
+  text-align: center;
+  width: 100%;
+}
+.section-three img {
+  max-width: 250px;
+  padding-top: 50px;
+}
+
+.ipad-section .left-section {
+  background-color: #e0f3fa;
+}
+.left-section {
+  float: left;
+  min-height: 40vh;
+}
+
+.right-section {
+  float: right;
+  min-height: 40vh;
+}
+
+.left-section {
+  background-color: rgb(153, 146, 146);
+  width: 50%;
+}
+
+.iphonex-section .left-section {
+  background-color: #f3e2c7;
+}
+
+.iphonex-section .right-section {
+  background-color: #e0f3fa;
+}
+
+.macbook-section .left-section {
+  background-color: #e0f3fa;
+}
+
+.macbook-section .right-section {
+  background-color: #fa8455;
+}
+
+.right-section {
+  background-color: #8989ba;
+  width: 50%;
+  text-align: center;
+}
+
+.section-three h3 {
+  padding-right: 30%;
+  padding-top: 80px;
+  font-size: 30px;
+}
+
+.section-three p {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.section-four {
+  width: 100%;
+  display: flex;
+}
+
+.team,
+.sallary,
+.earnings,
+h3 p {
+  float: left;
+  min-height: 20vh;
+  font-size: 20px;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.team,
+.sallary,
+.earnings {
+  width: 33.3%;
+}
+
+.team {
+  background-color: #8989ba;
+  text-align: left;
+}
+.sallary {
+  background-color: #f3e2c7;
+}
+.earnings {
+  background-color: aqua;
+}
+
+.team h3 {
+  padding-left: 80px;
+}
+
+.team p {
+  padding-left: 50px;
+}
+
+.sallary h3 {
+  padding-left: 80px;
+}
+
+.sallary p {
+  padding-left: 50px;
+}
+
+.earnings h3 {
+  padding-left: 80px;
+}
+
+.earnings p {
+  padding-left: 50px;
+}
+
+.social-icons {
+  min-height: 20vh;
+  font-size: 30px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin-right: 100px;
+}
+
+.social-icons a:hover {
+  color: red;
+}
+
+.fa-brands {
+  padding-top: 50px;
+}
+
+.footer-content-section {
+  background-color: purple;
+  color: white;
+  min-height: 4vh;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
