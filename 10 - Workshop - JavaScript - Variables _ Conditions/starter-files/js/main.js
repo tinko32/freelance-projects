@@ -214,7 +214,7 @@ const handleRoute = (e) => {
   if (_hash.includes("#login")) {
     // Checking if the user is not logged in than we are setting the login page to block
     loginPage.style.display = "block";
-  } else if (_hash.includes("")) {
+  } else if (_hash === "") {
     // checking if the hash location include the empty string,and than we are setting the homePage to display block
     homePage.innerHTML = "";
     // Making a for loop to the database,to show every movie,who is inside this database.
@@ -242,7 +242,7 @@ const handleRoute = (e) => {
         homePage.appendChild(movieCard);
       });
     });
-  } else if (_hash.includes("movieDetails")) {
+  } else if (location.hash.includes("movieDetails")) {
     // With this we are checking if the user clicked on some of the movie,and we are setting the location hash to true in this case.
     // In summary, the code extracts the current movie ID from the URL hash and searches for the corresponding movie object in the movieList array. The resulting movie object is assigned to the clickedMovie variable.
     let currentMovieId = Number(location.hash.split("/")[1]);
